@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+.body{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+.head{
+	height:30px;
+	line-height:30px;
+	border-bottom:1px solid #333 ;
+}
+.baidu_list{
+	float:right;
+}
+.baidu_list li{
+	float:left;
+	margin:0 15px;
+	font-size:13px;
+	font-weight:bold;
+}
+.line{
+	width:1px;
+	height:14px;
+	float:right;
+	background:black;
+	margin-top:9px;
+}
+.tieba_nav{
+	float:right;
+}
+.tieba_nav li{
+	float:left;
+	margin:0 15px;
+	font-size:13px;
+}
+
+.member_btn{
+	position:relative;
+}
+.member_btn:hover .member_list{
+	display:block;
+}
+.member_list{
+	width:100px;
+	border:1px solid #999;
+	box-sizing:border-box;
+	position:absolute;
+	display:none;
+	z-index:2;
+	margin-left:-60px;
+	text-align:center;
+}
+.member_list li{
+	float:none;
+	margin:0;
+}
+.member_list li:hover{
+	background:blue;
+}
+

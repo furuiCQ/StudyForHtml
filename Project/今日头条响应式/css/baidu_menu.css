@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+#ck{
+	display:none;
+}
+/*#ck checked + .menu{
+	display:block;
+}*/
+.menu{
+	/*display:none;*/
+}
