@@ -1,0 +1,34 @@
+/* CSS Document */
+body{
+	padding:0;
+	margin:0;
+}
+.ul_bg{
+	width:100%;
+	height:18px;
+}
+ul{
+	list-style-type:none;
+	position:relative;
+	height:30px;
+	background:black;
+}
+li{
+	float:left;
+	color:white;
+	margin:0 5px;
+	padding:5px 0;
+	display:block;
+	position:relative;
+	z-index:9;
+}
+p{
+	position:absolute;
+	width:20px;
+	height:15px;
+	background:red;
+	margin:0 5px;
+	padding:5px 0;
+	z-index:5;
+	transition:.5s;
+}

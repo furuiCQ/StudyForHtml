@@ -3,7 +3,11 @@
 body{
 	padding:0;
 	margin:0;
-}
+	width:1200px;
+	height:4000px;
+	background:blue;
+/*	background:url(../img/img1.jpg) repeat-y;
+*/}
 .box{
 	background:#f30;
 	width:100px;
@@ -15,5 +19,5 @@ input{
 }
 #box_end{
 	width:0;
-	transition:.3s;
+	transition:.3s;	
 }

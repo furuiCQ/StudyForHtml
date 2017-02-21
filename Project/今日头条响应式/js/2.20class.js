@@ -22,7 +22,28 @@ $(function(){
 		}else{
 			$(".box").animate({width:0},2000)
 		}*/
-		$(".box").css("background","green");
-		$(".box").animate({backgroundColor: "gray"},2000);
+		//$(".box").css("background","green");
+		/*$(".box").animate({backgroundColor: "gray"},2000);
+		$("body").animate({scrollTop:200},4000);//*/
+		$(".box").slideUp(1000);
+		$(".box").slideDown(1000);	
 	});
+	
+	
+	$("p").css("width",$("li:first").width());//获取宽
+	$("p").css("height",$("li:first").height());//高
+	$("li").mouseenter(function(){
+		var left=$(this).position().left;
+		var top_value=$(this).position().top;
+		var select_li=$(this);
+		$("p").animate({top:top_value,left:left,width:$(this).width(),height:$(this).height()},500);
+	});
+	
+	
+	
+	$("li").click(function(e) {
+		$("li").css("background-color","");
+       	$(this).css("background-color","red");
+    });
+	
 });
