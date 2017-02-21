@@ -32,7 +32,8 @@ $(function(){
 			"top":selectLi.position().top});
 	}
 });
-/*$(function(){
+/*使用animation实现，但是存在动画队列的问题，
+$(function(){
 	$("li:first").css("backgroundColor","red");
 	$("p").css("width",$("li:first").width());//获取宽
 	$("p").css("height",$("li:first").height());//高
