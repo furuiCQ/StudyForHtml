@@ -1,0 +1,49 @@
+@charset "utf-8"
+*{
+	padding:0;
+	margin:0;
+}
+html,body{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.testDiv{
+	width:120px;
+	height:60px;
+	background:#ccc;
+	text-align:center;
+	color:red;
+	line-height:60px;
+	position:relative;
+	margin-top:10px;
+	left:0;
+	/*transition-property:left;
+	transition-duration:5s;
+	transition-timing-function:linear;*/
+	transition:background 2s,left 5s linear 2s,
+	font-size 2s linear 7s,transform 10s linear 2s;
+}
+body:hover .testDiv:nth-child(2){
+	background:#00F;
+	left:1000px;
+	font-size:20px;
+	transform:rotate(3600deg);
+}
+/*body .testDiv:nth-child(2){
+	transition-timing-function:ease;
+}
+body .testDiv:nth-child(3){
+	transition-timing-function:ease-in;
+}
+body .testDiv:nth-child(4){
+	transition-timing-function:ease-out;
+}
+body .testDiv:nth-child(5){
+	transition-timing-function:ease-in-out;
+}
+body:hover .testDiv{
+	background:#00F;
+	left:1000px;
+}*/
+
