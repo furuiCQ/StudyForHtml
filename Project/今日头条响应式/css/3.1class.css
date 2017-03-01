@@ -1,0 +1,91 @@
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;
+}
+html,body{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+.moveBox{
+	width:100%;
+	height:500%;
+	position:absolute;
+	top:0;
+	transition:.5s;
+
+}
+.moveBox div{
+	width:100%;
+	height:20%;
+	font-size:200px;
+	background:#666;
+	text-align:center;
+	color:white;
+
+}
+.moveBox :nth-child(1){
+	background:#F00;
+}
+.moveBox :nth-child(2){
+	background:#0F0;
+}
+.moveBox :nth-child(3){
+	background:#00F;
+}
+.moveBox :nth-child(4){
+	background:#B0B;
+}
+.moveBox :nth-child(5){
+	background:#0BA;
+}
+/**/
+.arrow{
+	width:40px;
+	height:40px;
+	line-height:36px;
+	text-align:center;
+	border:2px solid #fff;
+	color:#fff;
+	box-sizing:border-box;
+	font-size:24px;
+	position:fixed;
+	bottom:5%;
+	left:50%;
+	margin-left:-20px;
+	border-radius:50%;
+	curosr:pointer;
+	animation:jump 2s infinite;	
+}
+.arrow:hover{
+	animation-play-state:paused;
+}
+@keyframes jump{
+	form{
+	   margin-bottom:0;	
+	   opacity:1;	
+	}
+	to{
+	   margin-bottom:20px;
+	   opacity:.4;
+	}
+}
+.pointer{
+	position:fixed;
+	right:5%;
+	top:50%;
+	list-style-type:none;
+}
+.pointer li{
+	width:10px;
+	height:10px;
+	background:white;
+	margin-bottom:10px;
+	transform:rotate(45deg);
+	box-shadow:3px 2px 0px #ccc;
+}
+.pointer .on{
+	background:#333;
+}
