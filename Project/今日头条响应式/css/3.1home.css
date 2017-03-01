@@ -1,0 +1,55 @@
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;
+}
+.box{
+	width:300px;
+	height:300px;	
+	margin:200px auto;
+	transform-origin:center;
+	transform-style:preserve-3d;
+	perspective:50px;
+}
+.box div{
+	width:300px;
+	height:300px;
+	transform:translate3d(100,100,100);
+	line-height:300px;
+	font-size:50px;
+	text-align:center;
+	position:fixed;
+	
+}
+.box div:nth-child(1){
+	background:red;
+	opacity:.5;
+}
+.box div:nth-child(2){
+	background:#cea;
+	transform-origin:bottom;
+	transform:rotateX(90deg);
+}
+.box div:nth-child(3){
+	background:#eac;
+	transform-origin:left;
+	transform:rotate3d(0,0,300px,90deg);
+	display:none;
+}
+.box div:nth-child(4){
+	background:#fea;
+	transform-origin:right;
+	transform:rotate3d(0,0,300px,90deg);
+	display:none;
+}
+.box div:nth-child(5){
+	background:#aaa;
+	transform-origin:top;
+	transform:rotate3d(0,0,300px,90deg);
+	display:none;
+}
+.box div:nth-child(6){
+	background:#faa;
+	transform:translateZ(300px);
+	display:none;
+}
