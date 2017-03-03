@@ -1,0 +1,22 @@
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+detials{
+	
+}
+summary{
+	outline:none;
+}
+summary:before{
+	content:"+";
+	background:red;
+	width:20px;
+	text-align:center;
+	display:inline-block;
+	left:14px;
+	position:relative;	
+}
+

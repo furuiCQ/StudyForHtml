@@ -1,0 +1,47 @@
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;
+}
+body,html{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.leftNav{
+	width:20%;
+	min-width:200px;
+	max-width:21%;
+	height:100%;
+}
+.rightNav{
+	width:78%;
+	height:100%;
+}
+
+
+/*leftNav*/
+.title{
+	height:26px;
+}
+.title p{
+	float:left;
+	margin:5px;
+	cursor:pointer;
+}
+.navTitle{
+	margin-top:5px;
+	margin-left:5px;
+}
+.navTitle img{
+	float:left;
+}
+.imgOn{
+}
+.imgOn2{
+	src:url(../img/minus.gif);
+}
+summary::-webkit-details-marker{
+	display:none;
+}
+
