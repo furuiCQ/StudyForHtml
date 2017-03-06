@@ -4,14 +4,6 @@
 }*/
 $(function(){
 	$("input").click(function(e) {
-        	/*var data=new XMLHttpRequest()||new ActiveXObject("Microsoft.XMLHTTP");
-			data.open("GET","http://api.jisuapi.com/qqluck/query?qq=1182590636&appkey=44bef2a501648dab",true);
-			data.send();
-			data.onreadystatechange=function(){
-				if(data.readyState==4 && data.status==200){
-					console.log(data.responseText);
-				}
-			}*/
 			//jq的ajax网路请求并访问数据
 			$.ajax({
 				type:"get",
