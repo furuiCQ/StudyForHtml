@@ -1,6 +1,6 @@
 // JavaScript Document
 var apiKey="98a5097e8a21d71b89016f94247e781f";
-var dataNum=30;//总数据条数
+var dataNum=42;//总数据条数
 var onePageNumb=6;//每页显示的个数
 var showNumb=0;//当前显示第几页
 var newslist;//获取的所有数据
@@ -35,9 +35,7 @@ function showdData(){
 				var li=$(".content li:eq("+(i%6)+")");
 				li.children("img").attr("src",obj.picUrl);
 				li.children("div").text(obj.title);
-				li.click(function(e) {
-                    window.location.href=obj.url; 
-                });
+				li.attr("onClick","window.location.href='"+obj.url+"'");
 			}
 		}
 }
